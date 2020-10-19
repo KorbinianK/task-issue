@@ -1,0 +1,35 @@
+{
+  "folders": [
+    {
+      "path": "hello-world"
+    }
+  ],
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug",
+        "program": "hello-world/index.ts",
+        "cwd": "hello-world",
+        "outFiles": ["hello-world/dist/**/*.js"],
+        "outputCapture": "std",
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "preLaunchTask": "test-task"
+      }
+    ]
+  },
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true
+    },
+    "explorerExclude.backup": null
+  }
+}
